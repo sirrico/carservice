@@ -1,0 +1,184 @@
+body{
+	font: 100% Roboto, Arial, sans-serif;
+	background-color: #ebecfc;
+}
+th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table{
+	width:100%;
+	border: 2px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  background-color:#d1d2e8;
+}
+
+.record{
+	width:100%;
+	background-color: #d1d2e8;
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin-bottom:5px;
+}
+
+.lbutt{
+		text-align:center;
+		margin:20%;
+		padding:10%;
+		background-color: #d1d2e8;
+		border:2px solid black;
+		border-style: solid;
+		font: 200% Roboto, Arial, sans-serif;
+		
+}
+
+.tlog{
+	float: right;
+	margin-right:6px;
+	border:2px solid black;
+	border-style: solid;
+	background-color: #d1d2e8;
+}
+
+.tremove{
+	float: right;
+	margin-right:6px;
+	border:2px solid black;
+	border-style: dashed;
+}
+
+p{
+	margin-left:4px;
+}
+
+.rtit{
+	font-size:120%;
+}
+
+element text small{
+	width:100%;
+}
+
+input[type='checkbox'] { 
+	display: none; 
+} 
+
+input[type=text], select, textarea{
+	margin:2px;
+	padding: 4px;
+	border: 1px solid #ccc;
+	resize: vertical;
+}
+
+
+
+input[type=submit] {
+	width:100%;
+	font-size: 200%;
+	background-color:#afb0d9; 
+	padding: 16px 32px;
+	margin-top: 16px;
+	transition-duration: 0.1;
+}
+
+input[type=submit]:hover {
+	background-color: #ebecfc;
+	color: white;
+	transition-duration: 0.1;
+}
+
+
+.wrap-collabsible { 
+	margin: 1.2rem 0; 
+} 
+
+.lbl-toggle { 
+	display: block; 
+	font-weight: bold; 
+	font-size: 100%; 
+	text-transform: uppercase; 
+	text-align: center; 
+	padding: 1rem; 
+	color: #000000; 
+	background: #afb0d9; 
+	cursor: pointer; 
+	border-radius: 0px; 
+	transition: all 0.1s ease-out; 
+} 
+
+.lbl-toggle:hover { 
+	color: #FFF; 
+} 
+
+.lbl-toggle::before { 
+	content: ' '; 
+	display: inline-block; 
+	border-top: 5px solid transparent; 
+	border-bottom: 5px solid transparent; 
+	border-left: 5px solid currentColor; 
+	vertical-align: middle; 
+	margin-right: .7rem; 
+	transform: translateY(-2px); 
+	transition: transform .1s ease-out; 
+} 
+
+.toggle:checked+.lbl-toggle::before { 
+	transform: rotate(90deg) translateX(-3px); 
+} 
+
+.collapsible-content { 
+	max-height: 0px; 
+	overflow: hidden; 
+	transition: max-height .1s ease-in-out; 
+} 
+
+.toggle:checked + .lbl-toggle + .collapsible-content { 
+	max-height: 1000px; 
+} 
+
+.toggle:checked+.lbl-toggle { 
+	border-bottom-right-radius: 0; 
+	border-bottom-left-radius: 0; 
+} 
+
+.collapsible-content .content-inner { 
+	background: rgba(209, 210, 232, 1); 
+	border-bottom: 1px solid rgba(209, 210, 232, 1); 
+	border-bottom-left-radius: 0px; 
+	border-bottom-right-radius: 0px; 
+	padding: .5rem 1rem; 
+} 
+
+.collapsible-content p { 
+	margin-bottom: 0; 
+}
+
+@media (pointer:none), (pointer:coarse){
+  body{
+    font: 200% Roboto, Arial, sans-serif;
+  }
+  .lbl-toggle, input[type=text], select, textarea, radio{
+	font-size: 200%;
+  }
+  #element_3_1, #element_3_2, #element_6_1, #element_6_2{
+		width:15%;
+	}
+	#element_3_3, #element_6_3{
+	 width:25%;	
+	}
+	input[type=text], select, textarea{
+		width:100%;
+	}
+	input[type=radio]{
+		width:2em;
+		height:2em;
+	}
+	
+	input[type=date], DATE{
+	font-size:200%!important;
+	}
+	
+}

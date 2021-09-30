@@ -1,0 +1,62 @@
+<div class="wrap-collabsible">
+	  <input id="collapsible" class="toggle" type="checkbox">
+	  <label for="collapsible" class="lbl-toggle">Add a Service:</label>
+	  <div class="collapsible-content">
+		<div class="content-inner">
+		
+	
+	
+	<form action="/car/addservice.php">
+		
+				<div>
+					<label class="description" for="element_1">Service Name: </label>
+					<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="250" value=""> 
+				</div> 
+			
+			
+		
+				<div>
+					<label class="description" for="element_2">Mileage of Service: </label>
+					<input id="element_2" name="element_2" class="element text" type="text" size="8" maxlength="10" value=""> 
+				</div> 
+		
+				<label class="description" for="element_3">Date of Service: </label>
+				<span>
+					<input id="element_3" name="element_3" class="element date" type="date"> 
+				</span>
+	
+			
+				<div>
+					<label class="description" for="element_4">Description: </label>
+					<textarea id="element_4" name="element_4" class="element textarea medium"></textarea> 
+				</div> 
+			
+				<label class="description" for="element_7">Notify? </label>
+				<span>
+					<input id="element_7_1" name="element_7_1" class="element radio" type="radio" value="email">
+						<label class="choice" for="element_7_1">By Email</label>
+					<input id="element_7_2" name="element_7_1" class="element radio" type="radio" value="website">
+						<label class="choice" for="element_7_2">By Website</label>
+				</span> 
+			
+				<div>
+					<label class="description" for="element_5">Mileage for Next Service: </label>
+					<input id="element_5" name="element_5" class="element text" type="text" size="8" maxlength="10" value=""> 
+				</div> 
+			
+				<label class="description" for="element_6">Date for Next Service: </label>
+				<span>
+					<input id="element_6" name="element_6" class="element date" type="date"> 
+				</span>
+			
+				<input type="hidden" name="form_id" value="17863">
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit">
+			
+		
+	</form>
+	
+		</div>
+	  </div>
+	</div>
+	
+<br><br>
